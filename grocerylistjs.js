@@ -1,9 +1,8 @@
 "use strict";
-//array has 8 OBJECTS
-
-let  item1 = {
+//should these be in a class?
+let item1 = {
     name: "chicken",
-    price: 3.99   
+    price: 3.99
 }
 let item2 = {
     name: "bread",
@@ -23,7 +22,7 @@ let item5 = {
 }
 let item6 = {
     name: "avocado",
-    price: 2   
+    price: 2
 }
 let item7 = {
     name: "apples",
@@ -36,17 +35,21 @@ let item8 = {
 
 let groceryList = [item1, item2, item3, item4, item5, item6, item7, item8];
 //function
-let priceSum = function getPrice() {
-    console.log(groceryList.price);
-    }
-
-getPrice();
-// console.log(groceryList);
 
 //for of loop which goes through properties of objects
 for (let groceries of groceryList) {
     console.log(groceries)
 }
+let getPrice = groceryList.price;
+// function getPrice() {
+    console.log(getPrice);
+
+
+// getPrice();
+// console.log(groceryList);
+
+//for of loop which goes through properties of objects
+
 
 // function groceryPrice() {
 //     groceryList.reduce(priceSum, 0);
