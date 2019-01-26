@@ -6,11 +6,11 @@ let item1 = {
 }
 let item2 = {
     name: "bread",
-    price: 2.50
+    price: 2.5
 }
 let item3 = {
     name: "milk",
-    price: 1.50
+    price: 1.5
 }
 let item4 = {
     name: "beer",
@@ -26,7 +26,7 @@ let item6 = {
 }
 let item7 = {
     name: "apples",
-    price: 2
+    price: 2.75
 }
 let item8 = {
     name: "ice cream",
@@ -34,27 +34,30 @@ let item8 = {
 }
 
 let groceryList = [item1, item2, item3, item4, item5, item6, item7, item8];
-//function
+
 
 //for of loop which goes through properties of objects
 for (let groceries of groceryList) {
     console.log(groceries)
 }
-let getPrice = groceryList.price;
-// function getPrice() {
-    console.log(getPrice);
 
+//to print the prices of array use a for loop
+for (var j = 0; j < groceryList.length; j++){
+    console.log(groceryList[j].price);
+  }
+//for loop to cycle through array and add .price to total until
+//done cycling through length of groceryList
+let total = 0;
+for (var j = 0; j < groceryList.length; j++) {
+    total += groceryList[j].price;
+    console.log(total);
+}
+//print or manipulate items in array using loop
 
-// getPrice();
-// console.log(groceryList);
-
-//for of loop which goes through properties of objects
-
-
-// function groceryPrice() {
-//     groceryList.reduce(priceSum, 0);
+// for (var i = 0; i < 21; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i);
+//     }
 // }
-// console.log(groceryPrice);
-
 
 
